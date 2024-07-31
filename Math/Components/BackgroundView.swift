@@ -49,6 +49,7 @@ public struct BackgroundView<Content: View>: View {
         }
       LoadingOverlay()
     }
+    .environmentObject(LoadingManager())
   }
 
 }
@@ -86,5 +87,5 @@ class LoadingManager: ObservableObject {
     static let shared = LoadingManager()
     @Published var isLoading: Bool = false
 
-    private init() {}
+     init() {}
 }

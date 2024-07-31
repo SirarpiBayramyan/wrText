@@ -34,11 +34,7 @@ struct MainView: View {
           .padding(.horizontal, 40)
 
           Spacer()
-          NavigationLink(destination: AboutAppView()) {
-            Image("about")
-          }
-          .padding(.horizontal, 32)
-          .padding(.bottom, 48)
+          
         }
       }
     }
