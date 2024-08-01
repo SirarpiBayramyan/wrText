@@ -13,6 +13,16 @@ struct MainView: View {
     NavigationView {
       BackgroundView(shouldShowBackButton: false) {
         VStack(spacing: 32) {
+
+          HStack {
+            Spacer()
+            NavigationLink(destination: EmptyView()) {
+              Image("settings")
+                .resizable()
+                .frame(width: 34, height: 34)
+                .foregroundStyle(Color.wrBlue)
+            }
+          }
           Spacer()
           Image("appIcon")
           Spacer()
@@ -31,11 +41,16 @@ struct MainView: View {
 
           }
           .buttonStyle(.primary)
-          .padding(.horizontal, 40)
 
           Spacer()
-          
+          NavigationLink(destination: AboutAppView()) {
+            Image("about")
+          }
+          .padding(.horizontal, 32)
+
         }
+        .padding(.horizontal, 40)
+        .padding(.bottom, 4)
       }
     }
   }

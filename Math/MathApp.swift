@@ -1,5 +1,4 @@
 
-import FirebaseCore
 import SwiftUI
 
 @main
@@ -20,7 +19,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
   ) -> Bool {
-    FirebaseApp.configure()
 
     return true
   }

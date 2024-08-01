@@ -40,6 +40,8 @@ struct PrimaryButtonStyle: ButtonStyle {
         )
         .fill(bgColor)
       }
+      .shadow(color: .wrBlue2.opacity(0.5), radius: 1, x: 0, y: 2)
+      .shadow(color: .wrBlue2.opacity(0.15), radius: 5, x: 0, y: 0)
   }
 
 }

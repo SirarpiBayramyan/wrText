@@ -47,11 +47,18 @@ struct ResponseView: View {
 
         .padding(.horizontal, 24)
         Spacer()
-        Button("Try Again", action: {
+        Button(action: {
           Task {
             text = try await GPTNetwork().getGPTResponse(subject: text)
           }
-        })
+
+        }, label: {
+          Text("Try again")
+            .font(.title3)
+            .foregroundStyle(Color.wrBlue2)
+        }
+        )
+
 
       }
       .padding(.vertical, 36)

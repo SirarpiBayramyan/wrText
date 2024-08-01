@@ -18,6 +18,7 @@ struct EnterTextView: View {
         ZStack {
           TextField("Enter text here", text: $viewModel.text, axis: .vertical)
             .focused($isFocused)
+            .font(.footnote)
             .foregroundStyle(.white)
             .padding(16)
           Spacer()
@@ -28,7 +29,7 @@ struct EnterTextView: View {
             style: .circular
           )
           .fill(
-            .wrBlue.opacity(0.8)
+            .wrBlue.opacity(0.3)
           )
           .shadow(color: .wrBlue.opacity(0.5), radius: 1, x: 0, y: 2)
           .shadow(color: .wrBlue.opacity(0.15), radius: 5, x: 0, y: 0)
