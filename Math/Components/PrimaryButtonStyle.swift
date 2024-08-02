@@ -30,7 +30,7 @@ struct PrimaryButtonStyle: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
       .font(.headline)
-      .foregroundStyle(Color.white)  
+      .foregroundStyle(Color.white)
       .frame(maxWidth: .infinity)
       .frame(height: 36)
       .background {

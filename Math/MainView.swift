@@ -16,27 +16,28 @@ struct MainView: View {
 
           HStack {
             Spacer()
-            NavigationLink(destination: EmptyView()) {
+            NavigationLink(destination: SettingsView()) {
               Image("settings")
                 .resizable()
-                .frame(width: 34, height: 34)
+                .frame(width: 28, height: 28)
                 .foregroundStyle(Color.wrBlue)
             }
           }
+          .padding(.top, 24)
           Spacer()
           Image("appIcon")
           Spacer()
           VStack(alignment: .center, spacing: 24) {
             NavigationLink(destination: EnterTextView()) {
-              Text("Enter text")
+              Text("wr-enter-text".localized())
             }
 
             NavigationLink(destination: ReadTextFromImageView()) {
-              Text("Read text")
+              Text("wr-read-text".localized())
             }
 
             NavigationLink(destination: ScanTextWithCameraView()) {
-              Text("Scan text")
+              Text("wr-scan-text".localized())
             }
 
           }

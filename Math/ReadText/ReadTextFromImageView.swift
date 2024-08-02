@@ -17,7 +17,7 @@ struct ReadTextFromImageView: View {
     BackgroundView {
       VStack {
         PhotosPicker(
-          "Select an image",
+          "wr-select-an-image".lowercased(),
           selection: $viewModel.selectedItem,
           matching: .images
         )
@@ -34,7 +34,7 @@ struct ReadTextFromImageView: View {
                     requestedText: $viewModel.selectedText
                   )
                 ) {
-                  Text("Done")
+                  Text("wr-done".localized())
                 }
                 .simultaneousGesture(TapGesture().onEnded {
                   Task {
@@ -51,7 +51,7 @@ struct ReadTextFromImageView: View {
             )
           }
         } else {
-          Text("No Image")
+          Text("wr-no-image".localized())
         }
 
         Spacer()
