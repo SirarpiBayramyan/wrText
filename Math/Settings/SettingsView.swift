@@ -26,8 +26,10 @@ struct SettingsView: View {
       }
       .navigationBarTitle("wr-settings".localized())
     }
-
+    .navigationBarBackButtonHidden()
+    .customNavigationBackButton()
   }
+  
 }
 
   #Preview {

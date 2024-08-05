@@ -17,7 +17,7 @@ struct ReadTextFromImageView: View {
     BackgroundView {
       VStack {
         PhotosPicker(
-          "wr-select-an-image".lowercased(),
+          "wr-select-an-image".localized(),
           selection: $viewModel.selectedItem,
           matching: .images
         )

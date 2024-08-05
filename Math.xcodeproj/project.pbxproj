@@ -17,6 +17,7 @@
 		8D660C142C5D2816003BED4E /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C132C5D2816003BED4E /* LocalizedString.swift */; };
 		8D660C1A2C60E5E8003BED4E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C192C60E5E8003BED4E /* Bundle.swift */; };
 		8D660C1C2C60E612003BED4E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C1B2C60E612003BED4E /* LanguageManager.swift */; };
+		8D660C1E2C60ED1A003BED4E /* NavigationBackButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C1D2C60ED1A003BED4E /* NavigationBackButtonModifier.swift */; };
 		8DACC5002C48593A008915D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC4FF2C48593A008915D6 /* MainView.swift */; };
 		8DACC5022C48598F008915D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC5012C48598F008915D6 /* MainViewModel.swift */; };
 		8DACC5052C485A58008915D6 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC5042C485A58008915D6 /* PrimaryButtonStyle.swift */; };
@@ -53,6 +54,7 @@
 		8D660C182C5D2C92003BED4E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D660C192C60E5E8003BED4E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		8D660C1B2C60E612003BED4E /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		8D660C1D2C60ED1A003BED4E /* NavigationBackButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButtonModifier.swift; sourceTree = "<group>"; };
 		8DACC4FF2C48593A008915D6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8DACC5012C48598F008915D6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		8DACC5042C485A58008915D6 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				8DACC5072C493700008915D6 /* SearchButton.swift */,
 				8DACC5362C52636B008915D6 /* BackgroundView.swift */,
 				8D660C192C60E5E8003BED4E /* Bundle.swift */,
+				8D660C1D2C60ED1A003BED4E /* NavigationBackButtonModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				8D660C142C5D2816003BED4E /* LocalizedString.swift in Sources */,
 				8DACC53D2C52C574008915D6 /* EnterTextViewModel.swift in Sources */,
 				8D660C1A2C60E5E8003BED4E /* Bundle.swift in Sources */,
+				8D660C1E2C60ED1A003BED4E /* NavigationBackButtonModifier.swift in Sources */,
 				8DACC5022C48598F008915D6 /* MainViewModel.swift in Sources */,
 				8DACC5082C493700008915D6 /* SearchButton.swift in Sources */,
 			);

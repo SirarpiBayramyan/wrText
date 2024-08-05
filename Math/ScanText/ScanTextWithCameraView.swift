@@ -7,7 +7,7 @@ struct ScanTextWithCameraView: View {
   
   var body: some View {
       VStack {
-        Text("Detected Text")
+        Text("wr-detectet-text".localized())
           .font(.headline)
           .padding()
 
