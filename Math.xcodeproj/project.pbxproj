@@ -15,6 +15,8 @@
 		8D660C0D2C5CF87D003BED4E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C0C2C5CF87D003BED4E /* SettingsViewModel.swift */; };
 		8D660C122C5D271B003BED4E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D660C102C5D271B003BED4E /* Localizable.strings */; };
 		8D660C142C5D2816003BED4E /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C132C5D2816003BED4E /* LocalizedString.swift */; };
+		8D660C1A2C60E5E8003BED4E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C192C60E5E8003BED4E /* Bundle.swift */; };
+		8D660C1C2C60E612003BED4E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D660C1B2C60E612003BED4E /* LanguageManager.swift */; };
 		8DACC5002C48593A008915D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC4FF2C48593A008915D6 /* MainView.swift */; };
 		8DACC5022C48598F008915D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC5012C48598F008915D6 /* MainViewModel.swift */; };
 		8DACC5052C485A58008915D6 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACC5042C485A58008915D6 /* PrimaryButtonStyle.swift */; };
@@ -49,6 +51,8 @@
 		8D660C162C5D2C8A003BED4E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D660C172C5D2C8B003BED4E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D660C182C5D2C92003BED4E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D660C192C60E5E8003BED4E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		8D660C1B2C60E612003BED4E /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		8DACC4FF2C48593A008915D6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8DACC5012C48598F008915D6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		8DACC5042C485A58008915D6 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				8D091E632C5813A300DA9EEC /* GoogleService-Info.plist */,
 				8D660C102C5D271B003BED4E /* Localizable.strings */,
 				8D660C132C5D2816003BED4E /* LocalizedString.swift */,
+				8D660C1B2C60E612003BED4E /* LanguageManager.swift */,
 				8D00462B2C3F0E8A004272E1 /* MathApp.swift */,
 				8DACC53E2C52DB66008915D6 /* AboutAppView.swift */,
 				8DACC5332C518C1B008915D6 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				8DACC5042C485A58008915D6 /* PrimaryButtonStyle.swift */,
 				8DACC5072C493700008915D6 /* SearchButton.swift */,
 				8DACC5362C52636B008915D6 /* BackgroundView.swift */,
+				8D660C192C60E5E8003BED4E /* Bundle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				8DACC50A2C493AC9008915D6 /* EnterTextView.swift in Sources */,
 				8DACC5002C48593A008915D6 /* MainView.swift in Sources */,
 				8D660C0B2C5CF70C003BED4E /* SettingsView.swift in Sources */,
+				8D660C1C2C60E612003BED4E /* LanguageManager.swift in Sources */,
 				8D660C0D2C5CF87D003BED4E /* SettingsViewModel.swift in Sources */,
 				8DACC52D2C512F28008915D6 /* TextOverlayView.swift in Sources */,
 				8DACC53F2C52DB66008915D6 /* AboutAppView.swift in Sources */,
@@ -278,6 +285,7 @@
 				8DACC5122C495FC4008915D6 /* ScanTextWithCameraView.swift in Sources */,
 				8D660C142C5D2816003BED4E /* LocalizedString.swift in Sources */,
 				8DACC53D2C52C574008915D6 /* EnterTextViewModel.swift in Sources */,
+				8D660C1A2C60E5E8003BED4E /* Bundle.swift in Sources */,
 				8DACC5022C48598F008915D6 /* MainViewModel.swift in Sources */,
 				8DACC5082C493700008915D6 /* SearchButton.swift in Sources */,
 			);
