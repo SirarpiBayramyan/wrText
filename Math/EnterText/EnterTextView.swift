@@ -16,9 +16,10 @@ struct EnterTextView: View {
     BackgroundView {
       VStack {
         ZStack {
-          TextField("Enter text here", text: $viewModel.text, axis: .vertical)
+          TextField("wr-enter-text-here".localized(), text: $viewModel.text, axis: .vertical)
             .focused($isFocused)
-            .foregroundStyle(.wrBlue)
+            .font(.footnote)
+            .foregroundStyle(.white)
             .padding(16)
           Spacer()
         }
@@ -28,7 +29,7 @@ struct EnterTextView: View {
             style: .circular
           )
           .fill(
-            .white.opacity(0.1)
+            .wrBlue.opacity(0.3)
           )
           .shadow(color: .wrBlue.opacity(0.5), radius: 1, x: 0, y: 2)
           .shadow(color: .wrBlue.opacity(0.15), radius: 5, x: 0, y: 0)
@@ -48,7 +49,7 @@ struct EnterTextView: View {
         }
 
         if viewModel.shouldShowError && !isFocused {
-          Text("Search text is empty")
+          Text("wr-search-text-empty".localized())
             .foregroundStyle(Color.red)
             .font(.body)
             .multilineTextAlignment(.leading)
@@ -62,7 +63,7 @@ struct EnterTextView: View {
             requestedText: $viewModel.text
           )
         ) {
-          Text("Done")
+          Text("wr-done".localized())
         }
         .disabled(viewModel.text.isEmpty)
         .buttonStyle(.primary)

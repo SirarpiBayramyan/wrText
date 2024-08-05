@@ -33,22 +33,14 @@ public struct BackgroundView<Content: View>: View {
             .edgesIgnoringSafeArea(.all)
         }
         .navigationBarBackButtonHidden()
-        .toolbar {
-          if shouldShowBackButton {
-            ToolbarItem(placement: .navigationBarLeading) {
-              Button {
-                dismiss()
-              } label: {
-                Image(systemName: "arrow.backward")
-                  .font(.headline)
-                  .foregroundStyle(Color.wrBlue)
-              }
-              .disabled(LoadingManager.shared.isLoading)
-            }
-          }
-        }
+        .customNavigationBackButton(
+          shouldShowBackButton: shouldShowBackButton,
+          isDisabled: LoadingManager.shared.isLoading
+        )
+
       LoadingOverlay()
     }
+    .environmentObject(LoadingManager())
   }
 
 }
@@ -86,5 +78,5 @@ class LoadingManager: ObservableObject {
     static let shared = LoadingManager()
     @Published var isLoading: Bool = false
 
-    private init() {}
+     init() {}
 }

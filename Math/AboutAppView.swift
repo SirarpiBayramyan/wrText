@@ -24,7 +24,7 @@ struct AboutAppView: View {
                 .padding(.top, 20)
 
                 // App Description
-                Text("About This App")
+              Text("wr-about-this-app".localized())
                     .font(.title2)
                     .fontWeight(.semibold)
 
@@ -33,7 +33,7 @@ struct AboutAppView: View {
                     .padding(.bottom, 10)
 
                 // Features
-                Text("Features")
+              Text("wr-features".localized())
                     .font(.title2)
                     .fontWeight(.semibold)
 
@@ -46,12 +46,12 @@ struct AboutAppView: View {
                     HStack {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(.green)
-                        Text("Scan, read, enter Text and find info")
+                      Text("wr-scan-read".localized())
                     }
                     HStack {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(.green)
-                        Text("User friendly Interface")
+                      Text("wr-user-friendly".localized())
                     }
                 }
                 .padding(.bottom, 10)
@@ -74,7 +74,7 @@ struct AboutAppView: View {
             }
             .padding()
         }
-        .navigationTitle("About")
+        .navigationTitle("wr-about".localized())
     }
 }
 

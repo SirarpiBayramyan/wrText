@@ -13,33 +13,45 @@ struct MainView: View {
     NavigationView {
       BackgroundView(shouldShowBackButton: false) {
         VStack(spacing: 32) {
+
+          HStack {
+            Spacer()
+            NavigationLink(destination: SettingsView()) {
+              Image("settings")
+                .resizable()
+                .frame(width: 28, height: 28)
+                .foregroundStyle(Color.wrBlue)
+            }
+          }
+          .padding(.top, 24)
           Spacer()
           Image("appIcon")
           Spacer()
           VStack(alignment: .center, spacing: 24) {
             NavigationLink(destination: EnterTextView()) {
-              Text("Enter text")
+              Text("wr-enter-text".localized())
             }
 
             NavigationLink(destination: ReadTextFromImageView()) {
-              Text("Read text")
+              Text("wr-read-text".localized())
             }
 
             NavigationLink(destination: ScanTextWithCameraView()) {
-              Text("Scan text")
+              Text("wr-scan-text".localized())
             }
 
           }
           .buttonStyle(.primary)
-          .padding(.horizontal, 40)
 
           Spacer()
           NavigationLink(destination: AboutAppView()) {
             Image("about")
           }
           .padding(.horizontal, 32)
-          .padding(.bottom, 48)
+
         }
+        .padding(.horizontal, 40)
+        .padding(.bottom, 4)
       }
     }
   }

@@ -1,0 +1,20 @@
+
+"wr-app-language" = "Langue de l'application";
+"wr-language" = "Langue";
+"wr-settings" = "Paramètres";
+"wr-enter-text" = "Saisir le texte";
+"wr-scan-text" = "Scanner le texte";
+"wr-read-text" = "Lire le texte";
+"wr-enter-text-here" = "Entrez le texte ici";
+"wr-search-text-empty" = "Le texte de recherche est vide";
+"wr-done" = "Terminé";
+"wr-no-image" = "Pas d'image";
+"wr-selected-text" = "Texte sélectionné %@";
+"wr-features" = "Fonctionnalités";
+"wr-about-this-app" = "À propos de cette application";
+"wr-scan-read" = "Scannez, lisez, saisissez du texte et trouvez des infos";
+"wr-user-friendly" = "Interface conviviale";
+"wr-about" = "À propos";
+"wr-select-an-image" = "Sélectionnez une image";
+"wr-detectet-text" = "Texte détecté";
+

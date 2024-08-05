@@ -1,5 +1,6 @@
 import Foundation
 
+// Decodable structs for parsing the GPT response
 struct GPTResponse: Decodable {
     let choices: [Choice]
 }
@@ -12,7 +13,8 @@ struct Message: Decodable {
     let content: String
 }
 
-class GPTNetwork {
+// Define the GPTNetwork actor
+actor GPTNetwork {
 
     private let APIKey = "sk-proj-GlCEbRfbf39IVotMYlVXT3BlbkFJDhx6NilBv9NHTAxrKsmF"
     private let url = "https://api.openai.com/v1/chat/completions"
@@ -33,13 +35,13 @@ class GPTNetwork {
         self.request?.setValue("Bearer \(APIKey)", forHTTPHeaderField: "Authorization")
     }
 
-  @MainActor
+    // Public method to get GPT response
     public func getGPTResponse(subject: String) async throws -> String {
         LoadingManager.shared.isLoading = true
 
-        guard var request else { 
-          LoadingManager.shared.isLoading = false
-          return ""
+        guard var request else {
+            LoadingManager.shared.isLoading = false
+            return "Invalid request"
         }
         request.httpBody = try JSONSerialization.data(withJSONObject: setupRequestData(with: subject))
 
@@ -54,9 +56,6 @@ class GPTNetwork {
             throw error
         }
     }
-}
-
-extension GPTNetwork {
 
     private func setupRequestData(with subject: String) -> [String: Any] {
         return [
@@ -68,3 +67,9 @@ extension GPTNetwork {
         ]
     }
 }
+
+//// Dummy LoadingManager for demonstration
+//class LoadingManager {
+//    static let shared = LoadingManager()
+//    var isLoading: Bool = false
+//}

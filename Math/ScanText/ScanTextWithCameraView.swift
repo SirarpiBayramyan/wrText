@@ -7,7 +7,7 @@ struct ScanTextWithCameraView: View {
   
   var body: some View {
       VStack {
-        Text("Detected Text")
+        Text("wr-detectet-text".localized())
           .font(.headline)
           .padding()
 
@@ -33,7 +33,7 @@ struct ScanTextWithCameraView: View {
             requestedText: $viewModel.selectedText
           )
         ) {
-          Text("Done")
+          Text("wr-done".localized())
         }
         .disabled(viewModel.selectedText.isEmpty)
         .buttonStyle(.primary)
@@ -45,7 +45,7 @@ struct ScanTextWithCameraView: View {
         })
         .padding(32)
         // Display selected text
-        Text("Selected Text: \(viewModel.selectedText)")
+        Text("wr-selected-text".localized(args: viewModel.selectedText))
           .font(.body)
           .padding()
 
