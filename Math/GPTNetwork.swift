@@ -16,7 +16,7 @@ struct Message: Decodable {
 // Define the GPTNetwork actor
 actor GPTNetwork {
 
-    private let APIKey = "sk-proj-GlCEbRfbf39IVotMYlVXT3BlbkFJDhx6NilBv9NHTAxrKsmF"
+    private let APIKey = "your api key"
     private let url = "https://api.openai.com/v1/chat/completions"
     private let basePrompt = "I need 100 words about this subject in Swift formatted array"
     var request: URLRequest?
