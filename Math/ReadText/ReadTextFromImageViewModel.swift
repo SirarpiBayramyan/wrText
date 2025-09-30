@@ -33,8 +33,11 @@ class ReadTextFromImageViewModel: ObservableObject {
   func loadImage(from item: PhotosPickerItem) {
     Task {
       if let data = try? await item.loadTransferable(type: Data.self), let uiImage = UIImage(data: data) {
-        self.image = uiImage
-        self.detectText(in: uiImage)
+          DispatchQueue.main.async {
+              self.image = uiImage
+              self.detectText(in: uiImage)
+          }
+
       }
     }
   }
@@ -60,7 +63,7 @@ class ReadTextFromImageViewModel: ObservableObject {
       do {
         try requestHandler.perform([request])
       } catch {
-        DispatchQueue.main.async {
+         DispatchQueue.main.async {
           self.textObservations = []
         }
       }

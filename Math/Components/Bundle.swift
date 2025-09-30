@@ -23,7 +23,7 @@ extension Bundle {
   
   
   static func currentLanguage() -> String {
-    return UserDefaults.standard.string(forKey: "AppLanguage") ?? Locale.current.languageCode ?? "en"
+     UserDefaults.standard.string(forKey: "AppLanguage") ?? Locale.current.languageCode ?? "en"
   }
   
   // MARK: - Custom Bundle for Language Swizzling

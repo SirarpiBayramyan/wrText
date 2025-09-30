@@ -68,8 +68,3 @@ actor GPTNetwork {
     }
 }
 
-//// Dummy LoadingManager for demonstration
-//class LoadingManager {
-//    static let shared = LoadingManager()
-//    var isLoading: Bool = false
-//}
