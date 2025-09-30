@@ -2,7 +2,7 @@
 
 ## Overview
 
-URText is an AI-powered application that enables users to ask questions and receive intelligent answers. It leverages multiple input methods, including camera capture, image uploads, and text input. With integrated object detection and text recognition, URText extracts relevant text from images and processes user queries efficiently.
+wrText is an AI-powered application that enables users to ask questions and receive intelligent answers. It leverages multiple input methods, including camera capture, image uploads, and text input. With integrated object detection and text recognition, URText extracts relevant text from images and processes user queries efficiently.
 
 ## Features
 
