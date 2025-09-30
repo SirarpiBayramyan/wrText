@@ -1,4 +1,4 @@
-# URText - AI-Powered Text Recognition and Query App
+# wrText - AI-Powered Text Recognition and Query App
 
 ## Overview
 
